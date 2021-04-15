@@ -1,34 +1,126 @@
-html,body{
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.background-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(./assets/bg2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.content-container-landing {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.header {
+  border-bottom: solid;
+  border-width: 0.2px;
+  border-color: rgba(255, 255, 255, 0.479);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  width: 200px;
+  /* border: 1px solid red; */
+}
+
+.nav-links-container {
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+}
+
+.nav-links-container a {
+  font-size: 14px;
+  color: white;
+  margin: 0 30px;
+}
+
+.welcome-text-container {
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.welcome-text-container h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.welcome-text-container h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.login-container {
+  background-color: #30706d;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.login-btn{
+    background-color: #30706d;
+    color: white;
+    border: none;
     margin: 0;
-    padding: 0;   
-    background-image: url(./assets/bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646;
-    font-size: 16px;  
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 0.8em;
 }
 
-.background-container-top{
-    min-height: 100vh;
-    width: 100vw;
-    background-image: url(./assets/bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646;
-    font-size: 16px;  
+.register-container {
+  background-color: #61d185;
+  width: 50%;
+  position: relative;
 }
 
-.content-container-top{
-    height: 100vh;
-    width: 100%;
-    background-color:rgba(0, 0, 0, 0.7);
-   /*  width: 100%;
-    min-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;   */  
+.register-btn {
+  background-color: #61d185;
+  color: white;
+  border: none;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 0.8em;
+}
+
+.skew-container {
+  margin-left: -10px;
+  width: 25px;
+  height: 100%;
+  background-color: #61d185;
+  transform: skew(-11deg);
 }
