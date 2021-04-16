@@ -153,7 +153,7 @@ body {
 .border{
     width: 90%;
     height: 80%;
-    border-right: dotted;
+    border-right: 2px dotted #A5AFA4;;
     min-width: 350px;
 }
 
@@ -183,16 +183,23 @@ body {
 
 .company-member-img{
     border-radius: 50px;
-    border: 3px solid gray;
+    border: 3px solid #A5AFA4;
     margin-bottom: 8px;
 }
 
 .name-role-header{
-    margin: 0;
+    margin: 3px;
+}
+
+.role{
+    color: #A5AFA4;
+    font-weight: normal;
+    font-size: 0.85rem;
 }
 
 .social-media-container-icons i{
   margin: 0 5px;
+  color: #A5AFA4;
 }
 
 
@@ -234,7 +241,7 @@ body {
 }
 
 
-/************ Services SECTION *************************/
+/************ SERVICES SECTION *************************/
 .services-container{
     height: 300px;
     display: flex;
@@ -289,4 +296,65 @@ body {
 .services-text-container p{
     margin: 0;
     text-align: center;
+}
+
+
+/****************** FOOTER SECTION ***************************/
+.footer-container{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242322;
+}
+
+.footer-content-main-container{
+    width: 80%;
+    height: 60%;
+    /* border: 1px solid pink; */
+    display: flex;
+}
+
+.footer-content-section{
+    height: 100%;
+    border-right: 1px solid #A5AFA4;
+    width: 33%;
+    color: #A5AFA4;
+}
+
+.no-border{
+    border: none;
+}
+
+.text-left-container{
+    width: 80%;
+}
+
+.nav-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer-navigation-container{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-column a{
+    margin: 5px 0;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.nav-column a span:hover{
+    padding-left: 5px;
+    color: white;
+    cursor: pointer;
 }
