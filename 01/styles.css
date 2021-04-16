@@ -6,6 +6,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+/*************** TOP SECTION ************************/
 .background-container {
   min-height: 100vh;
   min-width: 100%;
@@ -29,7 +30,7 @@ body {
 .header {
   border-bottom: solid;
   border-width: 0.2px;
-  border-color: rgba(255, 255, 255, 0.479);
+  border-color: rgba(255, 255, 255, 0.179);
   padding-top: 25px;
   padding-bottom: 25px;
   margin: 0 auto;
@@ -76,6 +77,8 @@ body {
   font-style: italic;
   font-weight: normal;
 }
+
+/********************************** LOGIN/REGISTER ******************************/
 
 .login-container {
   background-color: #30706d;
@@ -125,7 +128,16 @@ body {
   transform: skew(-11deg);
 }
 
-/***********    ABOUT US SECTION         **************/
+/************* MEDIA QUERIES --- TOP SECTION  **********/
+@media screen and (max-width: 1024px) {
+    .nav-links-container a {
+        margin: 0 15px;
+      }
+  }
+
+
+
+/**************************    ABOUT US SECTION     *****************************/
 .about-us-section{
     height: 300px;
     background-color: white;
@@ -200,6 +212,31 @@ body {
 .social-media-container-icons i{
   margin: 0 5px;
   color: #A5AFA4;
+}
+
+/************* MEDIA QUERIES --- ABOUT US SECTION  **********/
+@media screen and (max-width: 1024px) {
+    .flex-container-about {
+        width: 90%;
+      }
+}
+
+@media screen and (max-width: 850px) {
+    .about-us-section{
+        height: 380px;
+        align-items: flex-start;
+    }
+    .flex-container-about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .border{
+        text-align: center;
+        border: none;
+    }
+    .text-container{
+        width: 100%;
+    }
 }
 
 
@@ -298,6 +335,16 @@ body {
     text-align: center;
 }
 
+/************* MEDIA QUERIES --- SERVICES SECTION  **********/
+@media screen and (max-width: 775px) {
+    .services-container {
+        height: 380px;
+    }
+    .flex-content-container{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
 
 /****************** FOOTER SECTION ***************************/
 .footer-container{
@@ -347,6 +394,8 @@ body {
 .nav-column{
     display: flex;
     flex-direction: column;
+    min-width: 110px;
+    /* border: 1px solid pink; */
 }
 
 .nav-column a{
