@@ -199,6 +199,94 @@ body {
 
 /**********      CAROUSEL SECTION       *************/
 .carousel-container{
+    color: white;
     height: 150px;
-    background-color: red;
+    background-image: url(./assets/carousel-img.jpg);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     background-color: #464646;
+     background-position-y: 200px;
+}
+
+.img-container-carousel {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-text-container{
+    width: 50%;
+    height: 66%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.carousel-header{
+    text-align: center;
+    font-weight: lighter;
+}
+
+
+/************ Services SECTION *************************/
+.services-container{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-content-container{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 730px;
+}
+
+.icon-text-container{
+    margin-left: 10px;
+    width: 100%;
+    height: 60%;
+    min-width: 180px;
+    max-width: 250px;
+    /* border: 1px solid pink; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-background{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    color: white;
+    font-size: 22px;
+}
+
+.services-text-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-text-container h3{
+    margin: 0;
+}
+
+.services-text-container p{
+    margin: 0;
+    text-align: center;
 }
