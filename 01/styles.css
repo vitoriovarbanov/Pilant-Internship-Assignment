@@ -8,7 +8,7 @@ body {
 
 .background-container {
   min-height: 100vh;
-  width: 100vw;
+  min-width: 100%;
   background-image: url(./assets/bg2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@ body {
 
 .content-container-landing {
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-between;
@@ -123,4 +123,82 @@ body {
   height: 100%;
   background-color: #61d185;
   transform: skew(-11deg);
+}
+
+/***********    ABOUT US SECTION         **************/
+.about-us-section{
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.flex-container-about{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    /* border: 1px solid pink; */
+}
+
+.left-section-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid pink; */
+    min-width: 380px;
+}
+
+.border{
+    width: 90%;
+    height: 80%;
+    border-right: dotted;
+    min-width: 350px;
+}
+
+.text-container{
+    /* border: 1px solid red; */
+    min-width: 315px;
+    height: 100%;
+    width: 90%;
+}
+
+.logo-img-container{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-contatiner2{
+    height: 100%;
+    /* border: 1px solid red; */
+    width: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.company-member-img{
+    border-radius: 50px;
+    border: 3px solid gray;
+    margin-bottom: 8px;
+}
+
+.name-role-header{
+    margin: 0;
+}
+
+.social-media-container-icons i{
+  margin: 0 5px;
+}
+
+
+
+/**********      CAROUSEL SECTION       *************/
+.carousel-container{
+    height: 150px;
+    background-color: red;
 }
