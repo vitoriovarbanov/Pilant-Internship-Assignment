@@ -68,12 +68,12 @@ body {
 
 .welcome-text-container h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 60px
 }
 
 .welcome-text-container h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: normal;
 }
@@ -140,6 +140,12 @@ body {
       display: none;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .skew-container {
+        display: none;
+    }
+  }
 
 
 /**************************    ABOUT US SECTION     *****************************/
@@ -298,6 +304,15 @@ body {
 .carousel-header{
     text-align: center;
     font-weight: lighter;
+}
+
+.carousel-navigation button{
+    background-color: rgba(0, 0, 255, 0) !important;
+    border: none;  
+    outline: none;  
+}
+.carousel-navigation button:hover{
+    cursor: pointer; 
 }
 
 /************* MEDIA QUERIES --- CAROUSEL SECTION  **********/
