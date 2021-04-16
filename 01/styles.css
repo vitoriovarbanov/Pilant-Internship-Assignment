@@ -134,7 +134,12 @@ body {
         margin: 0 15px;
       }
   }
-
+  
+@media screen and (max-width: 700px) {
+  .nav-links-container a {
+      display: none;
+    }
+}
 
 
 /**************************    ABOUT US SECTION     *****************************/
@@ -239,6 +244,24 @@ body {
     }
 }
 
+@media screen and (max-width: 390px) {
+    .left-section-container{
+        min-width: 300px;
+    }
+    .text-container{
+        width: 90%;
+        min-width: 300px;
+    }
+    .border{
+        min-width: 300px;
+    }
+    .left-section-container p{
+        font-size: 0.9rem;
+    }
+    .company-member-img{
+        width: 80px;
+    }
+}
 
 
 /**********      CAROUSEL SECTION       *************/
@@ -275,6 +298,21 @@ body {
 .carousel-header{
     text-align: center;
     font-weight: lighter;
+}
+
+/************* MEDIA QUERIES --- CAROUSEL SECTION  **********/
+@media screen and (max-width: 775px) {
+    .carousel-text-container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .carousel-text-container{
+        width: 100%;
+    }
+    .carousel-container{
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -342,9 +380,31 @@ body {
     }
     .flex-content-container{
         flex-wrap: wrap;
+        min-width: initial;
         width: 100%;
     }
+    .icon-text-container{
+        justify-content: flex-start;
+        height: initial;
+    }
+    .services-text-container h3{
+        margin: 5px;
+        font-size: 1rem;
+    }
+    .services-text-container p{
+        font-size: 0.9rem;
+    }
+    .color-background{
+        height: 50px;
+        width: 50px;
+    }
 }
+
+@media screen and (max-width: 530px) {
+    .services-container {
+        height: 500px;
+    }
+} 
 
 /****************** FOOTER SECTION ***************************/
 .footer-container{
@@ -413,4 +473,36 @@ body {
 
 .footer-contacts span{
     padding-left: 10px;
+}
+
+
+/************* MEDIA QUERIES --- FOOTER SECTION  **********/
+@media screen and (max-width: 930px) {
+    .footer-content-main-container{
+        width: 100%;
+    }
+    .text-left-container{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-container{
+        height: 600px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .footer-content-main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .footer-content-section{
+        border-bottom: 1px solid #A5AFA4;
+        border-right: none;
+        min-width: 230px;
+        max-height: 250px;
+        margin: 10px 0;
+    }
 }
