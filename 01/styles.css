@@ -40,6 +40,9 @@ body {
 
 .logo-container {
   width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-links-container {
@@ -180,6 +183,10 @@ transition: ease-in(0.12, 0, 0.39, 0);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .logo-container img{
+    margin-top: 10px;
   }
 }
 
